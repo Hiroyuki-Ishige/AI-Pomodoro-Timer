@@ -9,7 +9,7 @@ interface TimerDisplayProps {
 export function TimerDisplay({ minutes, seconds, mode }: TimerDisplayProps) {
   return (
     <div className={cn("text-6xl font-mono font-bold text-primary",
-      mode === "work" ? "text-red-500" : "text-green-500")}>
+      mode === "work" ? "text-red-500" : "text-black")}>
       {minutes.toString().padStart(2, "0")}:
       {seconds.toString().padStart(2, "0")}
     </div>
